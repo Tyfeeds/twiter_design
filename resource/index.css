@@ -1,0 +1,180 @@
+*,::before, ::after{
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(211, 217, 221);
+    padding: 0;
+    margin: 0;
+    width:100%;
+    height:150vh
+}
+.layout-container{
+    /* border:10px solid white; */
+    display:grid;
+    position: sticky;
+    grid-template-columns: 60% auto;
+    
+    height: 520px;
+} 
+.grid1{
+    /* width:100%; */
+    background-color:red;
+    background-image: url(./images/twitter\ lohp_en_1302x955.png);
+    height: 550px;
+    
+}
+.hamburger-menu{
+    /* display: flex; */
+   
+    /* height: 100%; */
+    /* width: 100%; */
+    
+}
+.grid2{
+    background-color: rgb(211, 217, 221);
+    padding:1rem;
+    height: 550px;
+    /* width: 100%; */
+}
+input[type=button]{
+    text-align: center;
+    width:300px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+}
+input[type=button ]:hover{
+    background-color:rgb(70, 72, 77);
+    cursor: pointer;
+}
+#signup-phone{
+    background-color: rgb(68, 113, 212);
+    color: white;
+}
+#signup-phone:hover{
+    background-color:rgb(70, 72, 77);
+}
+#or{
+ margin: 25px;
+}
+
+#happen{
+    color:black
+}
+#join{
+    color:black
+}
+
+
+
+.text-signup{
+    color: aliceblue;
+    /* background-color: aliceblue; */
+ }
+
+ .read{
+    color: rgb(70, 72, 77);
+ }
+
+ .log{
+    color:rgb(70, 72, 77);;
+ }
+ #login{
+   color: rgb(44, 11, 230);
+    text-decoration: none;
+ }
+ #login:hover{
+    color:rgb(121, 85, 211)
+ }
+ #terms{
+    color: rgb(44, 11, 230);
+    text-decoration: none;
+ }
+ #terms:hover{
+    color:rgb(121, 85, 211) ;
+ }
+ #cookie{
+    color: rgb(44, 11, 230);
+    text-decoration: none;
+ }
+ #cookie:hover{
+    color:rgb(121, 85, 211) ;
+ }
+ #privacy{
+    color: rgb(44, 11, 230);
+    text-decoration: none;
+ }
+ #privacy:hover{
+    color:rgb(121, 85, 211);
+ }
+ /* footer */
+ .footer{
+    color: rgb(113, 96, 209);
+   background-color: rgb(211, 217, 221);
+    text-align: center;
+    justify-content: space-around;
+    margin: -5px;
+   height: 90px;
+   width: 100%;
+    
+ }
+ ul{
+    padding: 0;
+ }
+ .end{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+      padding: 20px;
+      margin-left: -5px;
+      
+}
+/* hamburger */
+.toggle-button{
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    height: 30px;
+    width: 30px;
+    justify-content: space-between;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100px;
+    background-color: white;
+}
+
+@media(max-width:600px){
+    .toggle-button{
+        display: flex;
+       
+    }
+    .hamburger-menu{
+        display: none;
+        width: 100%;
+     
+    }
+   .grid2{
+    flex-direction: column;
+    display: flex;
+    /* width: 100%; */
+   }
+   #logo{
+width: 50px;
+height: 50px;
+   }
+   #signup-phone{
+    height: 35px;
+   }
+   .footer{
+    display: none;
+   }
+   
+}
+.hamburger-menu.active{
+    display: none;
+}
