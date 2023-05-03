@@ -38,6 +38,13 @@ background-color: rgb(18, 18, 20) ;
     padding: 0 .7rem;  
 }
 /* two-items */
+.tm{
+    color:white;
+    display: flex;
+    /* width:50%; */
+    justify-content: center;
+    box-shadow:13px 13px 20px royalblue, -1px -1px 2px rgb(239, 241, 247);    border-radius: 50%;
+}
 #happen{
     color: white;
 }
@@ -155,7 +162,7 @@ input[type=button]:hover{
 .toggle-button .bar{
     height: 3px;
     width: 100%;
-    background-color:royalblue;
+    background-color:white;
     border-radius: 5px;
 }
 
@@ -199,7 +206,7 @@ input[type=button]:hover{
         display:none;
     }
     .smaller-screen{
-        border: 3px solid rgb(87, 118, 218);
+        /* border: 3px solid rgb(87, 118, 218); */
         border-radius: 5px;
         text-align: center;
     }
